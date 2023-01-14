@@ -191,7 +191,7 @@ article {
   --ionicon-stroke-width: 35px;
 }
 
-.download-box {
+.sidebar-info_more .download-box {
   position: relative;
   background: var(--border-gradient-onyx);
   width: 100%;
@@ -207,7 +207,7 @@ article {
   z-index: 1;
 }
 
-.download-box::before {
+.sidebar-info_more .download-box::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -708,6 +708,32 @@ main {
   opacity: 0;
   transition: var(--transition-1);
   z-index: 2;
+}
+
+.modal-content .download-box {
+  margin-top: 30px;
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.modal-content .download-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .modal-container.active .testimonials-modal {
