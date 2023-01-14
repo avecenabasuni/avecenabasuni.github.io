@@ -2,13 +2,14 @@
 
 $name = $_POST['fullname'];
 $email = $_POST['email'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 
 $mailheader = "From:".$name."<".$email.">\r\n";
 
 $recipient = "avecenab@gmail.com";
 
-mail($recipient, $message, $mailheader) or die("Error!");
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
 echo'
 <!DOCTYPE html>
