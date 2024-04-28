@@ -9,7 +9,7 @@
     <!--
     - favicon
   -->
-    <link rel="shortcut icon" href="./assets/images/logo.png" />
+    <link rel="shortcut icon" href="./assets/images/av.png" />
 
     <!--
     - custom css link
@@ -21,7 +21,10 @@
   -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -37,13 +40,17 @@
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <img src="./assets/images/my-avatar.png" alt="Avecena Basuni" width="80" />
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Avecena Basuni"
+              width="80"
+            />
           </figure>
 
           <div class="info-content">
             <h1 class="name" title="Avecena Basuni">Avecena Basuni</h1>
 
-            <p class="title">Electrical and Electronic Engineer</p>
+            <p class="title">Technical Product Specialist</p>
             <!-- <p class="title" style="margin-bottom: 7px">Embedded System Engineer</p>
             <p class="title" style="margin-bottom: 7px">Web Developer</p> -->
           </div>
@@ -67,7 +74,9 @@
               <div class="contact-info">
                 <p class="contact-title">Email</p>
 
-                <a href="mailto:avecenab@gmail.com" class="contact-link">avecenab@gmail.com</a>
+                <a href="mailto:avecenab@gmail.com" class="contact-link"
+                  >avecenab@gmail.com</a
+                >
               </div>
             </li>
 
@@ -79,7 +88,9 @@
               <div class="contact-info">
                 <p class="contact-title">Phone</p>
 
-                <a href="tel:+6281908606079" class="contact-link">(+62) 8190860XXXX</a>
+                <a href="tel:+6281908606079" class="contact-link"
+                  >(+62) 8190860XXXX</a
+                >
               </div>
             </li>
 
@@ -106,26 +117,40 @@
                 <address>Bekasi, West Java, Indonesia</address>
               </div>
             </li>
-            <a href="assets/doc/resume.pdf" class="download-box">Download My CV</a>
+            <a href="assets/doc/resume.pdf" class="download-box" target="_blank"
+              >Download My CV</a
+            >
           </ul>
 
           <div class="separator"></div>
 
           <ul class="social-list">
             <li class="social-item">
-              <a href="https://www.facebook.com/avecenabsn/" class="social-link">
+              <a
+                href="https://www.facebook.com/avecenabsn/"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="https://www.linkedin.com/in/avecenabasuni/" class="social-link">
+              <a
+                href="https://www.linkedin.com/in/avecenabasuni/"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="https://www.instagram.com/avecenabasuni/" class="social-link">
+              <a
+                href="https://www.instagram.com/avecenabasuni/"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -145,7 +170,7 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link" data-nav-link>About</button>
             </li>
 
             <li class="navbar-item">
@@ -155,10 +180,6 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
-
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>CV</button>
-            </li> -->
 
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
@@ -174,12 +195,41 @@
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
+          <div class="logo">
+            <img src="/assets/images/av.png" alt="" />
+          </div>
+          <div class="container">
+            <!-- Element to contain animated typing -->
+            <div>I am ‎</div>
+            <span id="element"></span>
+            <!-- Load library from the CDN -->
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+            <!-- Setup and start animation! -->
+            <script>
+              var typed = new Typed("#element", {
+                strings: [
+                  "interested in tech.",
+                  "hungry for knowledge!",
+                  "ready to learn anything!",
+                ],
+                typeSpeed: 75,
+                backSpeed: 75,
+                loop: true,
+              });
+            </script>
+          </div>
 
           <section class="about-text">
             <p>
-              I am a recent graduate majoring Electrical Engineering and minoring Electronics Engineering in Universitas Indonesia with GPA 3.87 out of 4.00. I am adaptable, highly motivated with strong communication and good teamwork. I am
-              able to solve problems and demonstrate leadership skills through taking part in non-profit organization, committees, and internship. I am highly interest in Internet of Things (IoT), embedded system, software, and electronics
-              circuit.
+              Highly motivated and results-oriented IT professional with a
+              passion for emerging technologies. Possesses strong technical
+              skills in cloud computing, product development, technical support,
+              and system administration. Proven ability to collaborate
+              effectively in teams, translate complex technical concepts into
+              clear communication, and foster a positive learning environment.
+              Eager to leverage experience in various IT areas to excel in this
+              field.
             </p>
           </section>
 
@@ -188,62 +238,116 @@
         -->
 
           <section class="service">
-            <h3 class="h3 service-title">What I'm Doing</h3>
+            <h3 class="h3 service-title">Interest</h3>
 
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
-                    src="./assets/images/icon-design.svg
-                "
+                    src="./assets/images/icon-cloud.png"
                     alt="design icon"
                     width="40"
                   />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">PCB Design</h4>
+                  <h4 class="h4 service-item-title">Cloud Computing</h4>
 
-                  <p class="service-item-text">Generate a PCB design where you decide where the electronic components will fit on a PCB and where you draw the conductive traces to connect everything.</p>
+                  <p class="service-item-text">
+                    Excited to leverage my technical skills and certifications
+                    to contribute to innovative cloud solutions (currently
+                    learning AWS cloud solutions).
+                  </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+                  <img
+                    src="./assets/images/icon-microcontroller.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Embedded System Development</h4>
+                  <h4 class="h4 service-item-title">
+                    Embedded System Development
+                  </h4>
 
-                  <p class="service-item-text">High-quality development of embedded system and make it capable to be Internet of Things.</p>
+                  <p class="service-item-text">
+                    Particularly enjoys the challenge of building hardware and
+                    software that connects to the Internet of Things (IoT).
+                  </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+                  <img
+                    src="./assets/images/icon-admin.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Apps & Web Development</h4>
+                  <h4 class="h4 service-item-title">Systems Administration</h4>
 
-                  <p class="service-item-text">High-quality development of sites and applications at the professional level integrated with embedded system to make it capable to be Internet of Things.</p>
+                  <p class="service-item-text">
+                    Technically adept IT professional with a keen interest in
+                    Systems Administration (both Linux and Windows server).
+                  </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
+                  <img
+                    src="./assets/images/icon-football.png"
+                    alt="camera icon"
+                    width="40"
+                  />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Graphic Design</h4>
+                  <h4 class="h4 service-item-title">Football</h4>
 
-                  <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
+                  <p class="service-item-text">
+                    Outside of work, you'll find me on the pitch playing mini
+                    soccer, another area where I enjoy the challenge of teamwork
+                    and strategy.
+                  </p>
                 </div>
               </li>
             </ul>
+          </section>
+
+          <section class="service">
+            <header>
+              <h2 class="h3 service-title">Birthday Countdown</h2>
+            </header>
+
+            <div class="countdown">
+              <div class="clock">
+                <div class="days">
+                  <span id="days">00</span>
+                  <p>DAYS</p>
+                </div>
+                <div class="hours">
+                  <span id="hours">00</span>
+                  <p>HOURS</p>
+                </div>
+                <div class="minutes">
+                  <span id="minutes">00</span>
+                  <p>MINS</p>
+                </div>
+                <div class="seconds">
+                  <span id="seconds">00</span>
+                  <p>SECS</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           <!--
@@ -426,21 +530,30 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">University of Indonesia</h4>
+                <h4 class="h4 timeline-item-title">Universitas Indonesia</h4>
 
                 <span>2019 — 2023</span>
 
-                <p class="timeline-text">I am majoring in Electrical Enginering and minoring in Electronics Engineering. I have a predicate of Cum Laude GPA until 7th semester: 3.87.</p>
+                <p class="timeline-text-experience">
+                  I am majoring in Electrical Enginering and minoring in
+                  Electronics Engineering. I have a predicate of Cum Laude GPA:
+                  3.87.
+                </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">71 Senior High School Jakarta</h4>
+                <h4 class="h4 timeline-item-title">
+                  71 Senior High School Jakarta
+                </h4>
 
                 <span>2016 — 2019</span>
 
-                <p class="timeline-text">
-                  I took Mathematics and Natural Sciences class. I ranked in the highest top 20 grades out of 144 students. I joined a committee that holds the school event called SEVONE 11th. I accepted into Universitas Indonesia through
-                  invitation (SNMPTN).
+                <p class="timeline-text-experience">
+                  I took Mathematics and Natural Sciences class. I ranked in the
+                  highest top 20 grades out of 144 students. I joined a
+                  committee that holds the school event called SEVONE 11th. I
+                  accepted into Universitas Indonesia through invitation
+                  (SNMPTN).
                 </p>
               </li>
             </ol>
@@ -449,7 +562,7 @@
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+                <ion-icon name="briefcase-outline"></ion-icon>
               </div>
 
               <h3 class="h3">Work Experiences</h3>
@@ -457,44 +570,267 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Electronics Laboratory Assistant at Laboratorium Elektronika FTUI</h4>
-
-                <span>August 2021 — Present</span>
-                <p class="timeline-text-experience">Evaluating 100+ practicum report,</p>
-                <p class="timeline-text-experience">Preparing practicum modules that will be given for one semester,</p>
-                <p class="timeline-text-experience">Responding to the queries raised by students and helping them understand the experiment,</p>
-                <p class="timeline-text-experience">Taught 10 modules (embedded systems and electronic circuits) to over 200 students.</p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Electrical Engineer at Covent Indonesia</h4>
-
-                <span>April 2022 — Present</span>
-                <p class="timeline-text-experience">Collaborating with other three multidisciplinary individuals to develop an Arduino-based Syringe Pump,</p>
-                <p class="timeline-text-experience">Designing the user interface using OLED display for the Arduino-based Syringe Pump,</p>
+                <h4 class="h4 timeline-item-title">
+                  Technical Product Specialist
+                </h4>
+                <div class="timeline-text-company">
+                  <span>PT Berca Hardayaperkasa</span>
+                </div>
+                <span>March 2024 — present</span>
                 <p class="timeline-text-experience">
-                  Developing and programming the Arduino-based Syringe Pump (i.e. interface, connection, circuitary) which aims to meet the health standards and will be manufactured commercially for the low-end market.
+                  Collaborated with cross-functional teams (product managers,
+                  engineers, designers) on 3 newly released New Relic’s product
+                  features, ensuring technical feasibility by identifying and
+                  mitigating potential roadblocks.
+                </p>
+                <p class="timeline-text-experience">
+                  Supported internal teams (Sales, Marketing, Customer Success)
+                  through New Relic’s technical overview and guidance,
+                  potentially leading to a 10% increase in their product
+                  knowledge.
+                </p>
+                <p class="timeline-text-experience">
+                  Developed and maintained technical documentation for 2-5 key
+                  New Relic’s product features, aiming to improve clarity and
+                  potentially reduce support tickets by 10%.
+                </p>
+                <p class="timeline-text-experience">
+                  Analyzed customer feedback data from a sample of 50 users to
+                  identify New Relic’s product improvement opportunities.
+                </p>
+                <p class="timeline-text-experience">
+                  Assisted with the technical aspects of 3 user testing sessions
+                  and 3 New Relic’s product demonstrations.
+                </p>
+                <p class="timeline-text-experience">
+                  Dedicated 4 hours per month to staying current on emerging
+                  technologies and industry trends relevant to New Relic's
+                  products.
                 </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Hardware Engineer at Evomo</h4>
-
-                <span>July 2022 — August 2022</span>
-
-                <p class="timeline-text-experience">Designed low fidelity UI/UX for computerized maintenance management system (CMMS) application,</p>
-                <p class="timeline-text-experience">Researched the best handheld RFID readers which capable of explosion for drilling services,</p>
+                <h4 class="h4 timeline-item-title">Junior Systems Engineer</h4>
+                <div class="timeline-text-company">
+                  <span>PT Kairos Utama Indonesia</span>
+                </div>
+                <span>April 2023 — March 2024</span>
+                <p class="timeline-text-experience">
+                  Designed and implemented secure, high-performance server
+                  systems, optimizing performance, and reliability for my
+                  clients.
+                </p>
+                <p class="timeline-text-experience">
+                  Managed Microsoft environments (e.g. Exchange, Active
+                  Directory, SQL Server, etc.) to facilitate seamless
+                  communication and collaboration across client teams.
+                </p>
+                <p class="timeline-text-experience">
+                  Performed proactive maintenance on client systems, minimizing
+                  downtime and ensuring optimal availability for critical
+                  business operations.
+                </p>
+                <p class="timeline-text-experience">
+                  Maintained database systems for all clients, guaranteeing data
+                  integrity and enabling reliable data analysis and reporting.
+                </p>
+                <p class="timeline-text-experience">
+                  Championed a high first-call resolution rate for critical
+                  incidents during 24/7 operations, ensuring seamless service
+                  delivery for clients.
+                </p>
+                <p class="timeline-text-experience">
+                  Utilized troubleshooting expertise to resolve complex
+                  technical issues faced by clients, delivering timely and
+                  effective solutions.
+                </p>
+                <p class="timeline-text-experience">
+                  Actively learned and explored cloud computing platforms like
+                  AWS and GCP, staying current with industry trends.
+                </p>
+                <p class="timeline-text-experience">
+                  Developed disaster recovery plans for clients, ensuring
+                  business continuity and minimizing downtime in case of
+                  unforeseen circumstances.
+                </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Electrical Maintenance Engineer at PT PLN UPT Cilegon</h4>
+                <h4 class="h4 timeline-item-title">
+                  Embedded Systems Engineer
+                </h4>
+                <div class="timeline-text-company">
+                  <span>Covent Indonesia</span>
+                </div>
+                <span>August 2021 — January 2023</span>
+                <p class="timeline-text-experience">
+                  Developed a low-cost medical device (Syringe Pump) with a
+                  team. This Arduino-based device enables precise fluid delivery
+                  in resource-limited settings
+                </p>
+                <p class="timeline-text-experience">
+                  Designed an intuitive user interface for the Syringe Pump,
+                  ensuring ease of use for medical professionals.
+                </p>
+                <p class="timeline-text-experience">
+                  Programmed the microcontroller for accurate fluid delivery and
+                  adherence to health standards using C/C++.
+                </p>
+                <p class="timeline-text-experience">
+                  Performed rigorous testing and debugging to ensure the Syringe
+                  Pump's functionality and reliability.
+                </p>
+              </li>
 
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Electronics Laboratory Assistant
+                </h4>
+                <div class="timeline-text-company">
+                  <span>Laboratorium Elektronika FTUI</span>
+                </div>
+                <span>August 2021 — January 2023</span>
+                <p class="timeline-text-experience">
+                  Designed and implemented engaging practicum modules covering
+                  10 key topics in embedded systems and electronic circuits for
+                  a semester-long course.
+                </p>
+                <p class="timeline-text-experience">
+                  Provided hands-on assistance and clear explanations during
+                  labs, fostering understanding of electronics concepts, and
+                  troubleshooting techniques for over 50 students per semester.
+                </p>
+                <p class="timeline-text-experience">
+                  Ensured functionality and calibration of critical lab
+                  equipment (oscilloscopes, power supplies, multimeters) for
+                  optimal student learning.
+                </p>
+                <p class="timeline-text-experience">
+                  Assessed student lab reports and projects, offering
+                  constructive feedback to ensure knowledge retention and skill
+                  development.
+                </p>
+                <p class="timeline-text-experience">
+                  Conducted safety briefings and enforced safety protocols to
+                  create a safe and responsible learning environment.
+                </p>
+                <p class="timeline-text-experience">
+                  Prepared and maintained lab setups for various electronics
+                  experiments, ensuring efficient lab workflows.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
+                <div class="timeline-text-company">
+                  <span>Evomo (subsidiary of Telkom Indonesia)</span>
+                </div>
+                <span>July 2022 — August 2022</span>
+
+                <p class="timeline-text-experience">
+                  Created low fidelity UI/UX designs for a CMMS application, a
+                  software solution for managing and optimizing maintenance
+                  operations.
+                </p>
+                <p class="timeline-text-experience">
+                  Conducted research on the best handheld RFID readers for
+                  drilling services, considering the requirements of
+                  explosion-proof and durability.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Electrical Maintenance Engineer
+                </h4>
+                <div class="timeline-text-company">
+                  <span>PT PLN UPT Cilegon</span>
+                </div>
                 <span>January 2022 — February 2022</span>
 
-                <p class="timeline-text-experience">Analysed the preventive maintenance and predictive maintenance on electrical distribution system equipment,</p>
-                <p class="timeline-text-experience">Studied the basics of electric transmission system,</p>
-                <p class="timeline-text-experience">Deepen the basics of maintenance in substations procedure,</p>
-                <p class="timeline-text-experience">Summarized all the theory and analysis within this internship process through written report.</p>
+                <p class="timeline-text-experience">
+                  Performed preventive maintenance analysis on lightning
+                  arrester equipment, ensuring safety and reliability of the
+                  electric transmission system.
+                </p>
+                <p class="timeline-text-experience">
+                  Learned the fundamentals of electric transmission system,
+                  including its components, functions, and operations.
+                </p>
+                <p class="timeline-text-experience">
+                  Acquired the basic skills of maintenance in substations
+                  procedure, following the best practices and standards.
+                </p>
+                <p class="timeline-text-experience">
+                  Prepared a written report summarizing the theory and practical
+                  aspects of the internship process.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Organization Experiences</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Staff of Studies and Strategic Action
+                </h4>
+                <div class="timeline-text-company">
+                  <span
+                    >Ikatan Mahasiswa Elektro Fakultas Teknik Universitas
+                    Indonesia (IME FTUI)</span
+                  >
+                </div>
+                <span>January 2021 — December 2021</span>
+                <p class="timeline-text-experience">
+                  Maintained daily content plan for Electrical Issue Magazine's
+                  Instagram.
+                </p>
+                <p class="timeline-text-experience">
+                  Redesigned templates for infographics to be published on
+                  social media.
+                </p>
+                <p class="timeline-text-experience">
+                  Managed deadlines and progress across all the team.
+                </p>
+                <p class="timeline-text-experience">
+                  Produced 3 videos and 20 infographics on social media.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Staff of Studies and Strategic Action
+                </h4>
+                <div class="timeline-text-company">
+                  <span
+                    >Ikatan Mahasiswa Elektro Fakultas Teknik Universitas
+                    Indonesia (IME FTUI)</span
+                  >
+                </div>
+                <span>January 2020 — December 2020</span>
+                <p class="timeline-text-experience">
+                  Created studies and videos about developing issues around the
+                  world.
+                </p>
+                <p class="timeline-text-experience">
+                  Designed templates and content for infographics to be
+                  published on our social media.
+                </p>
+                <p class="timeline-text-experience">
+                  Generated 2 infographics and 3 videos on our social media.
+                </p>
+                <p class="timeline-text-experience">
+                  Delegated the honor “Best Staff of the Term” in May 2020.
+                </p>
               </li>
             </ol>
           </section>
@@ -565,16 +901,21 @@
                 <button class="active" data-filter-btn>All</button>
               </li>
               <li class="filter-item">
-                <button data-filter-btn>Embedded System</button>
+                <button data-filter-btn>Projects</button>
               </li>
               <li class="filter-item">
-                <button data-filter-btn>Web Development</button>
+                <button data-filter-btn>Certifications</button>
+              </li>
+              <li class="filter-item">
+                <button data-select-item>Training</button>
               </li>
             </ul>
 
             <div class="filter-select-box">
               <button class="filter-select" data-select>
-                <div class="select-value" data-select-value>Select category</div>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
 
                 <div class="select-icon">
                   <ion-icon name="chevron-down"></ion-icon>
@@ -586,172 +927,362 @@
                   <button data-select-item>All</button>
                 </li>
                 <li class="select-item">
-                  <button data-select-item>Embedded System</button>
+                  <button data-select-item>Projects</button>
                 </li>
                 <li class="select-item">
-                  <button data-select-item>Web Development</button>
+                  <button data-select-item>Certifications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Training</button>
                 </li>
               </ul>
             </div>
 
             <ul class="project-list">
-              <li class="project-item active" data-filter-item data-category="web development">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="projects"
+              >
                 <div class="project-desc">
+                  <p class="project-category" data-testimonials-text>
+                    Web Development
+                  </p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal1"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal1">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                    <img
+                      src="./assets/images/project-1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title" data-testimonials-title>Portfolio</h3>
-
-                  <p class="project-category" data-testimonials-text>Web Development</p>
+                  <h3 class="project-title" data-testimonials-title>
+                    Portfolio
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="embedded system">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="projects"
+              >
                 <div class="project-desc">
+                  <p class="project-category" data-testimonials-text>
+                    Embedded System
+                  </p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal2"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal2">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
 
-                    <img src="./assets/images/project-2.jpg" alt="orizon" loading="lazy" />
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title" data-testimonials-title>Arduino-based Syringe Pump</h3>
-
-                  <p class="project-category" data-testimonials-text>Embedded System, Medical Instrument</p>
+                  <h3 class="project-title" data-testimonials-title>
+                    Arduino-based Syringe Pump
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="embedded system">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="projects"
+              >
                 <div class="project-desc">
+                  <p class="project-category" data-testimonials-text>
+                    Embedded System
+                  </p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal3"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
 
-                    <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
+                    <img
+                      src="./assets/images/project-3.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title" data-testimonials-title>IoT-Based Door Lock System in the Electronics Laboratory Room</h3>
-
-                  <p class="project-category" data-testimonials-text>Internet of Things, Embedded System</p>
+                  <h3 class="project-title" data-testimonials-title>
+                    IoT-Based Door Lock System in the Electronics Laboratory
+                    Room
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="embedded system">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="projects"
+              >
                 <div class="project-desc">
+                  <p class="project-category" data-testimonials-text>
+                    Embedded System
+                  </p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal4"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal4">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
 
-                    <img src="./assets/images/project-4.jpg" alt="fundo" loading="lazy" />
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title" data-testimonials-title>Smart Trash Bin Integrated with Automatic Hand Sanitizer</h3>
-
-                  <p class="project-category" data-testimonials-text>Embedded System</p>
+                  <h3 class="project-title" data-testimonials-title>
+                    Smart Trash Bin Integrated with Automatic Hand Sanitizer
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="embedded system">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="projects"
+              >
                 <div class="project-desc">
+                  <p class="project-category" data-testimonials-text>
+                    Embedded System
+                  </p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal5"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal5">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
 
-                    <img src="./assets/images/project-5.jpg" alt="brawlhalla" loading="lazy" />
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title" data-testimonials-title>Potentiostat for Cyclic Voltammetry Analysis using Microcontroller ESP32</h3>
-
-                  <p class="project-category" data-testimonials-text>Embedded System, Software Development</p>
+                  <h3 class="project-title" data-testimonials-title>
+                    Potentiostat for Cyclic Voltammetry Analysis using
+                    Microcontroller ESP32
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="web design">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="certifications"
+              >
                 <div class="project-desc">
+                  <p class="project-category">Cloud Computing</p>
                   <figure class="project-img">
                     <div class="project-item-icon-box" data-testimonials-item>
-                      <button class="trigger" data-target="#modal6"><ion-icon name="eye-outline"></ion-icon></button>
+                      <button class="trigger" data-target="#modal6">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-
-                    <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
+                    <img
+                      src="./assets/images/aws.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
                   </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
+                  <h3 class="project-title">
+                    AWS Certified: Solutions Architect Associate
+                  </h3>
                 </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="web design">
-                <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="certifications"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Monitoring and Observability</p>
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal7">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-
-                    <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
+                    <img
+                      src="./assets/images/newrelic.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
                   </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
+                  <h3 class="project-title">
+                    New Relic Certified: Advanced Practitioner
+                  </h3>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="web development">
-                <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="certifications"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Cloud Computing</p>
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal8">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-
-                    <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
+                    <img
+                      src="./assets/images/google.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
                   </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
+                  <h3 class="project-title">
+                    Google Cloud Certified: Cloud Digital Leader
+                  </h3>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="applications">
-                <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="training"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Information Technology</p>
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal9">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-
-                    <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
+                    <img
+                      src="./assets/images/googleitsupport.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
                   </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
+                  <h3 class="project-title">
+                    Grow with Google on Coursera: IT Support
+                  </h3>
+                </div>
               </li>
 
-              <li class="project-item active" data-filter-item data-category="web development">
-                <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="training"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Cloud Computing</p>
                   <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal10">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
                     </div>
-
-                    <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
+                    <img
+                      src="./assets/images/awsml.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
                   </figure>
+                  <h3 class="project-title">
+                    AWS Academy Graduate: Machine Learning Fondutains
+                  </h3>
+                </div>
+              </li>
 
-                  <h3 class="project-title">Arrival</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="training"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Cloud Computing</p>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal11">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <img
+                      src="./assets/images/awsca.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    AWS Academy Graduate: Cloud Architecting
+                  </h3>
+                </div>
+              </li>
 
-                  <p class="project-category">Web development</p>
-                </a>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="training"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Cloud Computing</p>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal12">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <img
+                      src="./assets/images/awscf.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    AWS Academy Graduate: Cloud Architecting
+                  </h3>
+                </div>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="certifications"
+              >
+                <div class="project-desc">
+                  <p class="project-category">Internet of Things</p>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box" data-testimonials-item>
+                      <button class="trigger" data-target="#modal13">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <img
+                      src="./assets/images/ciscoiot.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Cisco Networking Academy: Introduction to IoT
+                  </h3>
+                </div>
               </li>
             </ul>
           </section>
@@ -760,13 +1291,22 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal1" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal1"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
@@ -779,13 +1319,25 @@
 
                 <div data-modal-text>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id justo lacus. Donec et lorem euismod, laoreet massa eget, semper erat. Cras tempor nunc sed turpis vehicula, eu feugiat magna pellentesque. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Suspendisse potenti. Etiam eget molestie ex. Aliquam magna sapien, suscipit vel ligula a, efficitur mollis augue. Proin dictum massa diam, quis
-                    volutpat neque cursus eu. Aenean vitae gravida sem. Sed molestie pulvinar nisi eget porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer accumsan felis sit amet
-                    dolor pulvinar, in ultricies lorem pulvinar. Phasellus eros ligula, tempor a augue vel, elementum varius orci.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    id justo lacus. Donec et lorem euismod, laoreet massa eget,
+                    semper erat. Cras tempor nunc sed turpis vehicula, eu
+                    feugiat magna pellentesque. Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus. Aliquam erat volutpat.
+                    Suspendisse potenti. Etiam eget molestie ex. Aliquam magna
+                    sapien, suscipit vel ligula a, efficitur mollis augue. Proin
+                    dictum massa diam, quis volutpat neque cursus eu. Aenean
+                    vitae gravida sem. Sed molestie pulvinar nisi eget porta.
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Integer accumsan felis
+                    sit amet dolor pulvinar, in ultricies lorem pulvinar.
+                    Phasellus eros ligula, tempor a augue vel, elementum varius
+                    orci.
                   </p>
                 </div>
-                <a href="https://avecenabasuni.github.io" class="download-box">Visit Page</a>
+                <a href="https://avecenabasuni.github.io" class="download-box"
+                  >Visit Page</a
+                >
               </div>
             </section>
           </div>
@@ -794,28 +1346,46 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal2" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal2"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Arduino-Based Syringe Pump</h4>
+                <h4 class="h3 modal-title" data-modal-title>
+                  Arduino-Based Syringe Pump
+                </h4>
 
-                <time datetime="2021-06-14">2021 — Now</time>
+                <time datetime="2021-06-14">April 2021 — January 2023</time>
 
                 <div data-modal-text>
                   <p>
-                    An Arduino-based syringe pump is a medical device that uses an Arduino microcontroller to control the movement of a syringe, typically used for precise fluid dispensing or for administering medication. The Arduino can be
-                    programmed to control the speed and volume of the fluid being dispensed, and can be integrated with sensors and other devices to provide real-time monitoring and control of the pumping process. This is the project that I
-                    am currently working on and collaborating with other three multidisciplinary individuals during my internship at Covent Indonesia.
+                    An Arduino-based syringe pump is a medical device that uses
+                    an Arduino microcontroller to control the movement of a
+                    syringe, typically used for precise fluid dispensing or for
+                    administering medication. The Arduino can be programmed to
+                    control the speed and volume of the fluid being dispensed,
+                    and can be integrated with sensors and other devices to
+                    provide real-time monitoring and control of the pumping
+                    process. This is the project that I am currently working on
+                    and collaborating with other three multidisciplinary
+                    individuals during my internship at Covent Indonesia.
                   </p>
                 </div>
                 <a href="#" class="download-box">Visit Page</a>
@@ -827,28 +1397,46 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal3" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal3"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>IoT-Based Door Lock System in The Electronics Laboratory Room</h4>
+                <h4 class="h3 modal-title" data-modal-title>
+                  IoT-Based Door Lock System in The Electronics Laboratory Room
+                </h4>
 
                 <time datetime="2021-06-14">August 2022 — December 2022</time>
 
                 <div data-modal-text>
                   <p>
-                    IoT-based Smart Door Security is a door security system for opening and locking doors based on the Internet of Things (IoT) and using an RFID reader with an ESP32 microcontroller. The features offered by this system are
-                    easy, practical, and safe. This system will be implemented in departmental areas, especially the 3rd Floor DTE Building in the Electronics Laboratory room. Users can open the door using a student ID card which is read by
-                    the RFID reader. After that, the door opening data will be sent to the database using the internet via Wi-Fi.
+                    IoT-based Smart Door Security is a door security system for
+                    opening and locking doors based on the Internet of Things
+                    (IoT) and using an RFID reader with an ESP32
+                    microcontroller. The features offered by this system are
+                    easy, practical, and safe. This system will be implemented
+                    in departmental areas, especially the 3rd Floor DTE Building
+                    in the Electronics Laboratory room. Users can open the door
+                    using a student ID card which is read by the RFID reader.
+                    After that, the door opening data will be sent to the
+                    database using the internet via Wi-Fi.
                   </p>
                 </div>
                 <a href="#" class="download-box">Visit Page</a>
@@ -860,28 +1448,47 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal4" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal4"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Smart Trash Bin Integrated With Automatic Hand Sanitizer</h4>
+                <h4 class="h3 modal-title" data-modal-title>
+                  Smart Trash Bin Integrated With Automatic Hand Sanitizer
+                </h4>
 
                 <time datetime="2021-06-14">August 2021 — December 2021</time>
 
                 <div data-modal-text>
                   <p>
-                    A smart trash can integrated with a hand sanitizer that is a device controlled with an Arduino microcontroller to open or close the trash can and press the hand sanitizer automatically using an ultrasonic sensor. The
-                    servo motor is used to control the trash lid and press the hand sanitizer, while the buzzer is used as a hand sanitizer alarm. The lid of the trash can opens and closes automatically by detecting human presence at a
-                    distance of 30 cm. The servo motor will move and open the lid of the trash can. Then, the buzzer will turn on and the servo motor will press the hand sanitizer so that the hands are clean from dirt.
+                    A smart trash can integrated with a hand sanitizer that is a
+                    device controlled with an Arduino microcontroller to open or
+                    close the trash can and press the hand sanitizer
+                    automatically using an ultrasonic sensor. The servo motor is
+                    used to control the trash lid and press the hand sanitizer,
+                    while the buzzer is used as a hand sanitizer alarm. The lid
+                    of the trash can opens and closes automatically by detecting
+                    human presence at a distance of 30 cm. The servo motor will
+                    move and open the lid of the trash can. Then, the buzzer
+                    will turn on and the servo motor will press the hand
+                    sanitizer so that the hands are clean from dirt.
                   </p>
                 </div>
                 <a href="#" class="download-box">Visit Page</a>
@@ -893,28 +1500,48 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal5" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal5"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Potentiostat for Cyclic Voltammetry Analysis using Microcontroller ESP32</h4>
+                <h4 class="h3 modal-title" data-modal-title>
+                  Potentiostat for Cyclic Voltammetry Analysis using
+                  Microcontroller ESP32
+                </h4>
 
                 <time datetime="2021-06-14">July 2022 — January 2023</time>
 
                 <div data-modal-text>
                   <p>
-                    Potentiostats are electronic instruments used in electrochemical research to study and measure the electrochemical properties of electroactive materials. This project developed a potentiostat prototype with an affordable
-                    price (around 537,600.00 IDR) and an open-source system for cyclic voltammetry analysis. The potentiostat prototype is made using commercially available electronic components, such as ESP32 microcontrollers, op-amps,
-                    resistors, capacitors, and diodes. The potentiostat prototype has a current range from -430 µA to +410 µA and a sweep voltage range from -1.5 V to 1.5 V.
+                    Potentiostats are electronic instruments used in
+                    electrochemical research to study and measure the
+                    electrochemical properties of electroactive materials. This
+                    project developed a potentiostat prototype with an
+                    affordable price (around 537,600.00 IDR) and an open-source
+                    system for cyclic voltammetry analysis. The potentiostat
+                    prototype is made using commercially available electronic
+                    components, such as ESP32 microcontrollers, op-amps,
+                    resistors, capacitors, and diodes. The potentiostat
+                    prototype has a current range from -430 µA to +410 µA and a
+                    sweep voltage range from -1.5 V to 1.5 V.
                   </p>
                 </div>
                 <a href="#" class="download-box">Visit Page</a>
@@ -926,32 +1553,433 @@
             <div class="overlay" data-overlay></div>
 
             <section class="testimonials-modal">
-              <button class="modal-close-btn" data-target="#modal6" data-modal-close-btn>
+              <button
+                class="modal-close-btn"
+                data-target="#modal6"
+                data-modal-close-btn
+              >
                 <ion-icon name="close-outline"></ion-icon>
               </button>
 
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
                 </figure>
 
                 <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Smart Trash Bin Integrated With Automatic Hand Sanitizer</h4>
+                <h4 class="h3 modal-title" data-modal-title>
+                  AWS Certified: Solutions Architect Associate
+                </h4>
 
                 <time datetime="2021-06-14">August 2021 — December 2021</time>
 
                 <div data-modal-text>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id justo lacus. Donec et lorem euismod, laoreet massa eget, semper erat. Cras tempor nunc sed turpis vehicula, eu feugiat magna pellentesque. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Suspendisse potenti. Etiam eget molestie ex. Aliquam magna sapien, suscipit vel ligula a, efficitur mollis augue. Proin dictum massa diam, quis
-                    volutpat neque cursus eu. Aenean vitae gravida sem. Sed molestie pulvinar nisi eget porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer accumsan felis sit amet
-                    dolor pulvinar, in ultricies lorem pulvinar. Phasellus eros ligula, tempor a augue vel, elementum varius orci.
+                    Through the AWS Solutions Architect certification, I've
+                    honed my skills in designing secure, scalable, and
+                    fault-tolerant cloud solutions based on customer
+                    requirements. This credential validates my understanding of
+                    AWS services and technologies.
                   </p>
                 </div>
-                <a href="#" class="download-box">Visit Page</a>
+                <a
+                  href="https://www.credly.com/badges/d65aeee4-927e-4dcf-9b2a-166fcea82751/public_url"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal7" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal7"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  New Relic Certified: Advanced Practitioner
+                </h4>
+
+                <time datetime="2021-06-14">August 2021 — December 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    The New Relic Partner Program empowers technical
+                    professionals like developers, architects, and SREs to
+                    become experts in implementing and supporting New Relic's
+                    observability platform for client organizations. This allows
+                    me to help clients gain valuable insights into their
+                    applications and infrastructure, ultimately improving their
+                    performance and digital experience.
+                  </p>
+                </div>
+                <a
+                  href="https://credentials.newrelic.com/9c83be61-d154-45cb-bc83-7accd8cf447a"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal8" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal8"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Google Cloud Certified: Cloud Digital Leader
+                </h4>
+
+                <time datetime="2021-06-14"
+                  >Issued June 2023 - Expires June 2026</time
+                >
+
+                <div data-modal-text>
+                  <p>
+                    The Google Cloud program equipped me with a comprehensive
+                    understanding of Google Cloud's core products and services.
+                    You can now articulate their capabilities and translate them
+                    into solutions that benefit organizations. This includes
+                    identifying common business use cases and strategically
+                    applying cloud technology to support enterprise needs,
+                    ultimately driving performance and efficiency.
+                  </p>
+                </div>
+                <a
+                  href="https://www.credential.net/e2d66dd1-d66e-48ae-b65f-256690c2614b?key=be27bb8cb1d482969f90d2781deac42e0908c9932f795b19c1775c23e32d59ba"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal9" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal9"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Grow with Google on Coursera: IT Support
+                </h4>
+
+                <time datetime="2021-06-14">Issued June 2022</time>
+
+                <div data-modal-text>
+                  <p>
+                    I have completed five Google-developed courses that are part
+                    of the Google IT Support Professional Certificate program.
+                    These courses include hands-on practical assessments and are
+                    designed to prepare me for entry-level IT support positions.
+                    I have gained proficiency in essential skills, including
+                    troubleshooting and customer service, networking, operating
+                    systems, system administration, and security.
+                  </p>
+                </div>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/professional-cert/M8P665NBR4YF"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal10" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal10"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  AWS Academy Graduate: Machine Learning Foundations
+                </h4>
+
+                <time datetime="2021-06-14">Issued March 2023</time>
+
+                <div data-modal-text>
+                  <p>
+                    The AWS Academy Machine Learning Foundations course equipped
+                    me with the skills to build and deploy machine learning
+                    models on the AWS cloud platform. I grasped core concepts
+                    like classification and regression, alongside how to
+                    leverage AWS services for data labeling, model training, and
+                    deployment. Hands-on experience even allowed me to build a
+                    complete machine learning pipeline using Amazon SageMaker.
+                    This foundational knowledge empowers me to explore further
+                    and apply machine learning on AWS to solve real-world
+                    business problems.
+                  </p>
+                </div>
+                <a
+                  href="https://www.credly.com/badges/e44c5a4b-16b0-4cc1-bbb9-1864b9f893aa/linked_in_profile"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal11" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal11"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  AWS Academy Graduate: Cloud Architecting
+                </h4>
+
+                <time datetime="2021-06-14">Issued April 2022</time>
+
+                <div data-modal-text>
+                  <p>
+                    The AWS Academy Cloud Architecting course equipped me with
+                    the knowledge and skills to design secure and scalable IT
+                    infrastructures on the AWS cloud platform. I learned how to
+                    choose and configure the right AWS services based on
+                    specific business needs, ensuring high availability, fault
+                    tolerance, and cost-effectiveness for my solutions. This
+                    course also covered best practices for cloud architecture
+                    design, allowing me to create robust and efficient systems
+                    that can grow alongside evolving business demands.
+                  </p>
+                </div>
+                <a
+                  href="https://www.credly.com/badges/d2dee066-3103-4366-bdbe-009174937cc3?source=linked_in_profile"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal12" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal12"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  AWS Academy Graduate: Cloud Foundations
+                </h4>
+
+                <time datetime="2021-06-14">Issued March 2022</time>
+
+                <div data-modal-text>
+                  <p>
+                    The AWS Academy Cloud Foundations course provided me with a
+                    solid foundation in cloud computing concepts and the core
+                    services offered by AWS. I gained insights into how AWS can
+                    be leveraged to build scalable and secure solutions, while
+                    exploring its capabilities for storage, databases,
+                    networking, and compute resources. This comprehensive
+                    introduction empowers me to navigate the AWS cloud platform
+                    and make informed decisions when building cloud-based
+                    applications.
+                  </p>
+                </div>
+                <a
+                  href="https://www.credly.com/badges/880f1f69-c013-4169-9fef-c570b87b1a28?source=linked_in_profile"
+                  class="download-box"
+                  target="_blank"
+                  >Visit Page</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="modal-container" id="modal13" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button
+                class="modal-close-btn"
+                data-target="#modal13"
+                data-modal-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Cisco Networking Academy: Introduction to IoT
+                </h4>
+
+                <time datetime="2021-06-14">August 2021 — December 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    The Cisco "Introduction to IoT" course equipped me with a
+                    foundational understanding of the Internet of Things (IoT)
+                    and its role in driving digital transformation. I explored
+                    core concepts like how IoT systems connect and utilize data,
+                    along with the impact of emerging technologies like data
+                    analytics, AI/ML, and cybersecurity on the IoT landscape.
+                    The course also highlighted the importance of Intent-Based
+                    Networking in managing and securing the ever-growing number
+                    of connected devices within an IoT environment. This
+                    knowledge positions me to delve deeper into the world of IoT
+                    and its potential to revolutionize various industries.
+                  </p>
+                </div>
+                <a
+                  href="https://www.credly.com/badges/e9a6ea82-0af7-4c8f-b48a-2a4538bb4c85?source=linked_in_profile"
+                  target="_blank"
+                  class="download-box"
+                  >Visit Page</a
+                >
               </div>
             </section>
           </div>
@@ -991,17 +2019,42 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="message.php" method="POST" class="form" data-form>
+            <form
+              action="https://formsubmit.co/avecenab@gmail.com"
+              method="POST"
+              class="form"
+              data-form
+            >
               <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
-
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z]{2,}"
+                  title="Please enter a valid email address"
+                />
               </div>
 
-              <textarea name="subject" class="form-input" placeholder="Subject" required data-form-input></textarea>
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit" data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
@@ -1019,7 +2072,13 @@
     <!--
     - ionicon link
   -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
