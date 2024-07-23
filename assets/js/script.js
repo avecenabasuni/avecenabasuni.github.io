@@ -114,21 +114,22 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// page navigation variables
+// Page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+// Add event to all nav links
+for (let navIndex = 0; navIndex < navigationLinks.length; navIndex++) {
+  navigationLinks[navIndex].addEventListener("click", function () {
+    let clickedPage = this.innerHTML.toLowerCase();
+    for (let pageIndex = 0; pageIndex < pages.length; pageIndex++) {
+      if (clickedPage === pages[pageIndex].dataset.page) {
+        pages[pageIndex].classList.add("active");
+        navigationLinks[navIndex].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[pageIndex].classList.remove("active");
+        navigationLinks[navIndex].classList.remove("active");
       }
     }
   });
