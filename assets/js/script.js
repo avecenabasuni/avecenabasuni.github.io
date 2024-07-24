@@ -130,21 +130,26 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // Add event to all nav links
-navigationLinks.forEach((navLink, navIndex) => {
-  navLink.addEventListener("click", function () {
+for (let navIndex = 0; navIndex < navigationLinks.length; navIndex++) {
+  navigationLinks[navIndex].addEventListener("click", function () {
     let clickedPage = this.innerHTML.toLowerCase();
-    pages.forEach((page, pageIndex) => {
-      if (clickedPage === page.dataset.page) {
-        page.classList.add("active");
-        navLink.classList.add("active");
+    for (let pageIndex = 0; pageIndex < pages.length; pageIndex++) {
+      if (clickedPage === pages[pageIndex].dataset.page) {
+        pages[pageIndex].classList.add("active");
+        navigationLinks[navIndex].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        page.classList.remove("active");
-        navigationLinks[pageIndex].classList.remove("active");
+        pages[pageIndex].classList.remove("active");
       }
-    });
+    }
+    // Remove 'active' class from all navigation links except the clicked one
+    for (let i = 0; i < navigationLinks.length; i++) {
+      if (i !== navIndex) {
+        navigationLinks[i].classList.remove("active");
+      }
+    }
   });
-});
+}
 
 const startstop = document.getElementById("startstop");
 const seconds = document.getElementById("seconds");
