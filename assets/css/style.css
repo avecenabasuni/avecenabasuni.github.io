@@ -404,7 +404,29 @@ main {
 .info_more-btn:hover::before,
 .info_more-btn:focus::before {
   background: var(--teal);
+}
+
+.info_more-btn.active {
+  background: var(--teal);
   color: var(--white);
+}
+
+.info_more-btn.active::before {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.info_more-btn ion-icon {
+  color: inherit; /* Ensure the icon inherits the color of the button */
+}
+
+.info_more-btn.active ion-icon {
+  color: var(--white); /* Change icon color on active state */
+}
+
+.info_more-btn:hover ion-icon,
+.info_more-btn:focus ion-icon {
+  color: var(--white); /* Change icon color on hover and focus states */
 }
 
 .info_more-btn span {
@@ -456,13 +478,20 @@ main {
   font-style: normal;
 }
 
+.footer {
+  background: var(--eerie-black-2);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--dark);
+}
+
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
-  padding-left: 7px;
+  padding-left: 0;
 }
 
 .social-item .social-link {
@@ -474,7 +503,6 @@ main {
   color: var(--teal);
   transition: color var(--transition-1);
 }
-
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -2093,7 +2121,7 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 1250px screen
  */
 
-@media (min-width: 1250px) {
+@media (min-width: 1250px) and (min-height: 1024px) {
   /**
    * RESET
    */
