@@ -1520,7 +1520,14 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-@media (min-width: 100px) {
+@media (min-width: 300px) {
+  .avatar-box {
+    border-radius: 15px;
+  }
+
+  .avatar-box img {
+    width: 80px;
+  }
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1529,10 +1536,6 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
     border-radius: 12px;
-  }
-
-  .project-item {
-    border-radius: 16px;
   }
 }
 
