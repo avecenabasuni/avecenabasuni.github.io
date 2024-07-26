@@ -1515,20 +1515,12 @@ textarea.form-input::-webkit-resizer {
     font-weight: 700;
   }
 
-  .container {
-    height: 15vh;
+  .project-item {
+    border-radius: 16px;
   }
 }
 
-@media (min-width: 500px) {
-  /**
-   * client
-   */
-
-  .clients-item {
-    min-width: calc(33.33% - 10px);
-  }
-
+@media (min-width: 100px) {
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1536,7 +1528,11 @@ textarea.form-input::-webkit-resizer {
   .project-img,
   .blog-banner-box {
     height: auto;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
+  }
+
+  .project-item {
+    border-radius: 16px;
   }
 }
 
