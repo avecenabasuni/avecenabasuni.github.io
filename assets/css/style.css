@@ -1845,9 +1845,12 @@ textarea.form-input::-webkit-resizer {
    * #PORTFOLIO, BLOG
    */
 
-  .project-img,
-  .blog-banner-box {
+  .project-img {
     border-radius: 0 0 12px 12px;
+  }
+
+  .blog-banner-box {
+    border-radius: 12px 12px 12px 12px;
   }
 
   .blog-posts-list {
